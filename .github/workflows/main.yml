@@ -41,7 +41,7 @@ jobs:
   destroy-azure-resources:
     runs-on: ubuntu-latest
 
-    if: contains(github.event.pull_request.labels.*.name, 'azure down')
+    if: contains(github.event.pull_request.labels.*.name, 'azure down') #
 
     steps:
       - name: Checkout repository
